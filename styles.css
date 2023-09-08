@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Rubik', sans-serif;
-    color:	#9966CB;
 }
 
 .header{
@@ -10,6 +9,7 @@
     width: 100%;
     background-color: #0C090A;
     position:relative;
+    color:	#9966CB;
 }
 nav{
     display: flex;
@@ -30,7 +30,8 @@ nav{
 .nav-links ul li a{
     text-decoration: none;
     font-size: 15px;
-    font-weight:900;
+    font-weight:400;
+    color:	#9966CB;
 }
 .nav-links ul li::after{
     content: '';
@@ -57,4 +58,23 @@ nav{
 }
 .text-box p{
     margin: 10px 0 40px;
+}
+@media(max-width: 700px){
+    .nav-links ul li{
+        display: block;
+        color:black;
+    }
+    .nav-links{
+        position: absolute;
+        background: #9966CB;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+    .nav-links ul li a{
+        color:#0C090A;
+    }
 }
